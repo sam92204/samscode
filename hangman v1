@@ -1,0 +1,43 @@
+/******************************************************************************
+
+Welcome to GDB Online.
+GDB online is an online compiler and debugger tool for C, C++, Python, Java, PHP, Ruby, Perl,
+C#, VB, Swift, Pascal, Fortran, Haskell, Objective-C, Assembly, HTML, CSS, JS, SQLite, Prolog.
+Code, Compile, Run and Debug online from anywhere in world.
+
+*******************************************************************************/
+public class Main
+{           
+
+	public static void main(String[] args) {
+	    String words [] =new String []{"Hamza", "Sam", "Jeffrey"};
+    int x = getRandomIntegerBetweenRange(0,2);
+    String randomWord = words[x];
+    int lives = 0
+for (int lives = 0; i < 5; i++)		{
+
+		System.out.println("Input a Word");
+		
+		char user = (System.console().readLine()).charAt(0);
+		
+    	for (int i = 0; i < randomWord.length(); i++)		{
+    	   if (randomWord.charAt(i) == user){
+    	   		System.out.println("Correct");
+    	   	   break;	
+    	   }
+    	   		
+}
+System.out.println("The word is "+      randomWord);
+    	}
+    	 
+    	
+
+
+	    
+	}
+	
+public static int getRandomIntegerBetweenRange(double min, double max){
+    int x = (int)Math.floor((Math.random()*((max-min)+1))+min);
+    return x;
+}
+}
