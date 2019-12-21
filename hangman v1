@@ -13,8 +13,7 @@ public class Main
 	    String words [] =new String []{"Hamza", "Sam", "Jeffrey"};
     int x = getRandomIntegerBetweenRange(0,2);
     String randomWord = words[x];
-    int lives = 0
-for (int lives = 0; i < 5; i++)		{
+for (int lives = 5; lives > 0 ; lives --)		{
 
 		System.out.println("Input a Word");
 		
@@ -22,8 +21,10 @@ for (int lives = 0; i < 5; i++)		{
 		
     	for (int i = 0; i < randomWord.length(); i++)		{
     	   if (randomWord.charAt(i) == user){
-    	   		System.out.println("Correct");
-    	   	   break;	
+    	   		System.out.println("Correct. Lives: "+lives);
+    	   		lives++;
+    	   	   break; 
+    	   	   
     	   }
     	   		
 }
